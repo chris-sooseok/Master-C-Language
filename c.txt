@@ -1,0 +1,53 @@
+C
+
+
+Writing a Program
+
+1. Define the program objectives
+2. Design the program
+3. Write the code
+4. Compile
+5. Run the program
+6. Test and debug the program
+7. Maintain and modify the program
+
+
+
+
+About C
+
+- C is the preferred language for producing word processing programs, spreadsheets and compilers
+- Popular for programming embedded systems
+- Used on everything from minicomputers, Unix/Linux systems to mainframes
+- Provides low-level access to memory and requires minimal run-time support
+- Virtually all new major OS are written in C and/or C++. Thus, portable for many computer architectures
+- Most C code being written today is based on C89 version. This course uses C99 which expanded capabilities of C
+- The Unix/Linux kernel is written in C and many compilers and interpreters have been written in C
+- C is less strict in limiting what you can do, which can be both an advantage and a danger
+	-   Advantage is that many tasks are easier in C
+	-   Danger is that you can make mistakes (pointers) that are impossible in some languages (e.x. Java doesn't let you manage memory, thus has less error than C)
+- Pointers play a big role in C, such as direct access to memory and ability to manage memory at bit level
+
+
+
+
+Process of creating an executable file in C
+
+1. Editing : Create and modify program source code, which outputs source file with .c
+
+2. Compiling : Translate into assembly language and generate machine instructions from source file .c and output object file .o. During this stage compiler checks for syntax and semantic errors as well
+- compiling can be done with [ gcc -c filename.c ] command
+
+3. Linking : link in libraries and detect errors of functions, which outputs executable file .exe
+- linking can be done with [gcc main.o filename.o -o myprogram ] command
+Linker Errors
+- occurs when having trouble linking all the object files together to create an executable, usually when there is a library or object missing
+
+
+
+
+C as a Program
+- When you build a program, the program compiles all C files within, then, provides all .o files of those. Then, the next build step is linking all those .o files and creating a huge exe file that will function as a program
+
+	
+ 

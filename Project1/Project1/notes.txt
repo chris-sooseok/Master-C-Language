@@ -1,0 +1,12 @@
+
+Process of creating an executable file in C
+
+1. Editing : Create and modify program source code, which outputs source file with .c
+
+2. Compiling : Translate into assembly language and generate machine instructions from source file .c and output object file .o. During this stage compiler checks for syntax and semantic errors as well
+- compiling can be done with [ gcc -c filename.c ] command
+
+3. Linking : link in libraries and detect errors of functions, which outputs executable file .exe
+- linking can be done with [gcc main.o filename.o -o myprogram ] command
+Linker Errors
+- occurs when having trouble linking all the object files together to create an executable, usually when there is a library or object missing
