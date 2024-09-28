@@ -1,4 +1,4 @@
-C
+C Basics
 
 
 Writing a Program
@@ -44,10 +44,32 @@ Linker Errors
 - occurs when having trouble linking all the object files together to create an executable, usually when there is a library or object missing
 
 
-
-
 C as a Program
 - When you build a program, the program compiles all C files within, then, provides all .o files of those. Then, the next build step is linking all those .o files and creating a huge exe file that will function as a program
 
 	
+
+
+Preprocessor in C
+- not found in many other languages
+- allows for programs to be easier to develop, read, modify, and port to different computer systems
+- preprocessor statements are identified by the presence of a pound sign
+- utilize preprocessor to
+	- create own constants and macros with the #define statement
+	- build your own library files with the #include statement
+	- make more powerful program with the conditional #ifdef, #endif, #else, and #ifndef statements
+
+
+
  
+Header files
+- define information about some of the functions that are provided by that file
+	- stdio.h is the standard C library header and provides functionality for input and output
+	- stdio.h is required to use printf() function
+	- stdio.h contains the information that the complier needs to understand printf() as well as functions that deal with input and output
+- Two ways to #include header files in a program
+	- brackets (#include <filename.h>
+		- tells the preprocessor to look for the file in one or more standard system directories
+	-double quotes (#include "filename.h")
+		- first look in the current directory
+
